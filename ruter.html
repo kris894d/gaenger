@@ -31,11 +31,23 @@
     <!-- navigation af vores filtrering af områder -->
     <nav id="nav_filtrer">
       <button data-område="alle" class="valgt">Alle ruter</button>
-      <button data_område="Sjælland">Sjælland</button>
-      <button data_område="Fyn">Fyn</button>
-      <button data_område="Jylland">Jylland</button>
-      <button data_område="Øerne">Øerne</button>
+      <button data-område="Sjælland">Sjælland</button>
+      <button data-område="Fyn">Fyn</button>
+      <button data-område="Jylland">Jylland</button>
+      <button data-område="Øerne">Øerne</button>
     </nav>
+
+    <section id="liste"></section>
+
+    <template>
+      <article id="galleri">
+        <h2></h2>
+        <img src="" alt="" />
+        <p class="kortbeskrivelse"></p>
+        <p class="km"></p>
+        <p class="tid"></p>
+      </article>
+    </template>
 
     <!-- Footer med oplysning og sociale medier -->
     <footer>
@@ -52,5 +64,6 @@
         <img src="img/vejskilt.svg" alt="insta" />
       </a>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

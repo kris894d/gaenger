@@ -7,7 +7,7 @@ const url = "https://hiking-f964.restdb.io/rest/dataliste";
 // id fra main site//
 const options = {
   headers: {
-    "x-apikey": "6138a3ea7b91b61a0002921e",
+    "x-apikey": "6139ec0c43cedb6d1f97eeec",
   },
 };
 
@@ -16,13 +16,13 @@ document.addEventListener("DOMContentLoaded", start);
 let omroder;
 let filtrer = "alle";
 
-// første funktion - henter dataen fra html///
+// // første funktion - henter dataen fra html///
 function start() {
-  hentData();
   const filtrerKnapper = document.querySelectorAll("nav button");
   filtrerKnapper.forEach((knap) =>
     knap.addEventListener("click", filtrerOmroder)
   );
+  hentData();
 }
 
 //den henter dataen som vi har defineret og angir at du kan navigere rundt i div. områder//
@@ -43,4 +43,23 @@ async function hentData() {
 
 function vis(json) {
   console.log(json);
+
+  const container = document.querySelector("#liste");
+  const galleriTemplate = document.querySelector("template");
+  container.textContent = "";
+
+  // hvert objekt i array(liste) kan rulles ud hvert for sig og ligge i rigtigt orden 0-3fx //
+  json.forEach((omroder) => {
+    if (filtrer == omroder.område || filtrer == "alle") {
+      let klon = galleriTemplate.cloneNode(true).content;
+      //   klon.querySelector("img").src = "img/" + omroder.billede;
+      klon.querySelector("h2").textContent = omroder.navn;
+      klon.querySelector(".kortbeskrivelse").textContent =
+        omroder.kortbeskrivelse;
+      klon.querySelector(".km").textContent = omroder.km;
+      klon.querySelector(".tid").textContent = omroder.tid;
+
+      container.appendChild(klon);
+    }
+  });
 }
