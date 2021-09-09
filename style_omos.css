@@ -1,0 +1,15 @@
+* body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#section_om_os {
+  gap: 20px;
+  text-align: center;
+}
+
+#section_om_os p {
+  margin: 50px;
+}
