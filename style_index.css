@@ -15,7 +15,7 @@ main {
   place-content: space-around;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: right;
   padding: 1rem 1rem;
@@ -34,7 +34,7 @@ header nav ul {
 
 li {
   list-style: none;
-}
+} */
 
 /*Burgermenu*/
 .burgerButton {
@@ -92,4 +92,47 @@ li {
 
 .streg3.aktiv {
   transform: translateY(0) rotate(45deg);
+}
+
+/*NavBar*/
+nav {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+
+  list-style: none;
+  flex-direction: column;
+  margin: 35px;
+}
+
+/*Sektion1*/
+section #tekst_indhold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+section #tekst_indhold p {
+  grid-column: 2 / -1;
+  margin: 10px;
+}
+
+section #tekst_indhold img {
+  grid-row: 1 /2;
+}
+
+h2 {
+  text-align: center;
 }
