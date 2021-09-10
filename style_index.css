@@ -170,6 +170,18 @@ h2 {
   text-align: center;
 }
 
+#galleri_indhold img {
+  width: 100%;
+  height: 100vh;
+}
+
+#galleri_indhold .billeder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  gap: 10px;
+}
+
 /*Footer*/
 
 footer {
@@ -184,7 +196,7 @@ footer h3 {
   font-size: 14px;
   text-align: end;
   margin-right: 30px;
-  margin-bottom: 16px;
+  color: white;
 }
 
 /* footer {
