@@ -16,7 +16,7 @@
         </div>
 
         <!-- Burgermenu -->
-        <nav>
+        <nav class="navbar">
           <div class="burgerButton">
             <div class="streg1"></div>
             <div class="streg2"></div>
@@ -24,12 +24,14 @@
           </div>
 
           <!-- Navigations bar - linker til alle sider -->
-          <ul>
-            <li><a href="ruter.html">Find din rute</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="om_os.html">Om GÆNGER</a></li>
-            <li><a href="kontakt.html">Kontakt</a></li>
-          </ul>
+          <div class="navbarLinks">
+            <ul>
+              <li><a href="ruter.html">Find din rute</a></li>
+              <li><a href="events.html">Events</a></li>
+              <li><a href="om_os.html">Om GÆNGER</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+          </div>
         </nav>
       </header>
     </main>
@@ -42,8 +44,9 @@
           tenetur est! Ab voluptatum odio repudiandae. Pariatur cupiditate nemo,
           fuga commodi minus accusamus itaque.
         </p>
-
-        <img src="img/vejskilt.svg" alt="vejskilt" />
+        <div class="svg">
+          <img src="svg/Skilt.svg" alt="vejskilt" />
+        </div>
 
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
@@ -80,18 +83,21 @@
 
     <!-- Footer med oplysning og sociale medier -->
     <footer>
-      <img src="img/vejskilt.svg" alt="logo" />
-      <h3>
-        Kontakt:
-        <address>gaenger@gmail.com</address>
-      </h3>
-      <h3>Del din oplevelse:</h3>
       <a href="">
-        <img src="img/vejskilt.svg" alt="face" />
+        <img src="svg/Group 28.svg" alt="logo" />
       </a>
-      <a href="">
-        <img src="img/vejskilt.svg" alt="insta" />
-      </a>
+      <h3>Kontakt gaenger@gmail.com</h3>
+      <!-- <section>
+        <address>
+          Kontakt: <br />
+          gaenger@gmail.com
+        </address>
+        <aside>
+          Del dine oplevelser: <br />
+          <img src="svg/Facebook.svg" alt="" />
+          <img src="svg/Instagram.svg" alt="" />
+        </aside>
+      </section> -->
     </footer>
     <script src="script.js"></script>
   </body>

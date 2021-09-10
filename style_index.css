@@ -95,7 +95,7 @@ li {
 }
 
 /*NavBar*/
-nav {
+.navbar {
   z-index: 10;
   width: 100vw;
   height: 100vh;
@@ -105,9 +105,10 @@ nav {
   margin: 0;
   width: 100%;
   height: 100px;
+  transition: transform 0.3s;
 }
 
-nav ul {
+.navbar ul {
   display: flex;
   height: 100%;
   justify-content: space-evenly;
@@ -115,6 +116,29 @@ nav ul {
   list-style: none;
   flex-direction: column;
   margin: 35px;
+}
+
+.navbar .navbarLinks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+
+nav .navbarLinks.aktiv {
+  display: block;
+  background-color: grey;
+}
+
+.navbar .navbarLinks li {
+  list-style: none;
+}
+
+.navbar .navbarLinks li a {
+  text-decoration: none;
+  color: white;
 }
 
 /*Sektion1*/
@@ -125,14 +149,62 @@ section #tekst_indhold {
 }
 
 section #tekst_indhold p {
-  grid-column: 2 / -1;
-  margin: 10px;
+  grid-column: 1 / -1;
+  margin: 70px;
+  text-align: center;
+  margin: 25px;
 }
 
 section #tekst_indhold img {
   grid-row: 1 /2;
+  margin-top: -70px;
+  margin-left: 15px;
+  height: 75%;
+  place-content: center;
+  text-align: center;
+  margin-left: 150px;
 }
 
+/*galleri_indhold*/
 h2 {
   text-align: center;
 }
+
+/*Footer*/
+
+footer {
+  width: 100%;
+  height: 100px;
+  /* display: flex; */
+  justify-content: space-between;
+  background-color: #5c6f49;
+}
+
+footer h3 {
+  font-size: 14px;
+  text-align: end;
+  margin-right: 30px;
+  margin-bottom: 16px;
+}
+
+/* footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  font-size: 0.8em;
+  color: white;
+  background-color: #5c6f49;
+  font-family: "Raleway", sans-serif;
+  margin-top: 20px;
+} */
+
+footer img {
+  height: 45%;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+/* footer img {
+  padding: 22px;
+  text-align: left;
+} */
