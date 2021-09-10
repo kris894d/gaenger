@@ -51,11 +51,50 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-gap: 46px;
-  padding: 123px;
+  padding: 100px;
 }
 
 .so {
   grid-row: 1 / 4;
+}
+
+/*ikoner_indhold - 3. sektion*/
+#ikoner_indhold .ikoner_wrapper img {
+  display: block;
+  width: 50%;
+  height: 75px;
+  padding: 10px;
+  margin: 10px;
+}
+#ikoner_indhold .ikoner_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  padding-left: 110px;
+  padding-top: 0px;
+  padding-right: 10px;
+}
+
+/*insta_indhold - 4. sektion*/
+
+h2 {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#insta_indhold .insta_wrapper img {
+  display: block;
+  width: 50%;
+  height: 75px;
+  padding: 10px;
+  margin: 10px;
+}
+
+#insta_indhold .insta_wrapper {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 14px;
+  padding: 103px;
 }
 
 /* main {
