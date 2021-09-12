@@ -1,0 +1,60 @@
+* body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#section_kontakt {
+  font-family: montserrat, sans serif;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.social img {
+  width: 10vw;
+  text-align: end;
+  background-color: black;
+}
+
+.skilt {
+  width: 34vw;
+}
+
+@media (min-width: 700px) {
+  #section_kontakt {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    place-items: center;
+  }
+
+  .social img {
+    width: 20vw;
+    width: 4vw;
+    text-align: end;
+    background-color: black;
+  }
+
+  .skilt {
+    width: 25vw;
+    grid-column: 2/3;
+    grid-row: 1/6;
+  }
+
+  .tekst_social {
+    grid-column: 3/4;
+    grid-row: 2/5;
+  }
+
+  .social {
+    padding-top: 20px;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
