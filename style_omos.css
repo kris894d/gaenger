@@ -24,7 +24,7 @@
   background-position: 70%;
   display: grid;
   place-content: space-around;
-  background-image: url(img/Splash.jpg);
+  background-image: url(img/venner.jpg);
 }
 
 /* .splashTekst {
@@ -92,7 +92,7 @@ p {
     background-position: 70%;
     display: grid;
     place-content: space-around;
-    background-image: url(img/Splash.jpg);
+    background-image: url(img/venner.jpg);
   }
 
   .splashTekst {
