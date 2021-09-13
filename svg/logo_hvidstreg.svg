@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1242.444" height="415.801" viewBox="0 0 1242.444 415.801">
+  <g id="Group_29" data-name="Group 29" transform="translate(-52.06 -19.87)" style="isolation: isolate">
+    <g id="Path_25" data-name="Path 25" transform="translate(52.06 19.87)" fill="none">
+      <path d="M195.542,0H1046.9c107.995,0,195.542,83.451,195.542,186.393v43.014c0,102.942-87.547,186.393-195.542,186.393H195.542C87.547,415.8,0,332.35,0,229.407V186.393C0,83.451,87.547,0,195.542,0Z" stroke="none"/>
+      <path d="M 195.5421142578125 12.00006103515625 C 94.336669921875 12.00006103515625 12 90.2325439453125 12 186.3933868408203 L 12 229.4073944091797 C 12 325.5682373046875 94.336669921875 403.8007202148438 195.5421142578125 403.8007202148438 L 1046.902099609375 403.8007202148438 C 1148.107666015625 403.8007202148438 1230.4443359375 325.5682373046875 1230.4443359375 229.4073944091797 L 1230.4443359375 186.3933868408203 C 1230.4443359375 90.2325439453125 1148.107666015625 12.00006103515625 1046.902099609375 12.00006103515625 L 195.5421142578125 12.00006103515625 M 195.5421142578125 6.103515625e-05 L 1046.902099609375 6.103515625e-05 C 1154.89697265625 6.103515625e-05 1242.4443359375 83.45123291015625 1242.4443359375 186.3933868408203 L 1242.4443359375 229.4073944091797 C 1242.4443359375 332.3495483398438 1154.89697265625 415.8007202148438 1046.902099609375 415.8007202148438 L 195.5421142578125 415.8007202148438 C 87.547119140625 415.8007202148438 0 332.3495483398438 0 229.4073944091797 L 0 186.3933868408203 C 0 83.45123291015625 87.547119140625 6.103515625e-05 195.5421142578125 6.103515625e-05 Z" stroke="none" fill="#000"/>
+    </g>
+    <line id="Line_6" data-name="Line 6" x1="130.577" y2="395.487" transform="translate(962.923 29.5)" fill="none" stroke="#000" stroke-width="7"/>
+    <line id="Line_9" data-name="Line 9" x1="215" y2="307" transform="translate(1042.5 117.5)" fill="none" stroke="#000" stroke-width="7"/>
+    <line id="Line_11" data-name="Line 11" x1="173.474" y1="373.38" transform="translate(1028.212 29.237)" fill="none" stroke="#0b0101" stroke-width="7"/>
+    <g id="Group_18" data-name="Group 18" transform="translate(-1108.323 -951)">
+      <line id="Line_29" data-name="Line 29" x1="4" y1="25" transform="matrix(0.309, -0.951, 0.951, 0.309, 2169.099, 1209.586)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_30" data-name="Line 30" y1="17" x2="16" transform="matrix(0.309, -0.951, 0.951, 0.309, 2078.36, 1147.317)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_31" data-name="Line 31" y1="22" x2="6" transform="matrix(0.309, -0.951, 0.951, 0.309, 2111.114, 1191.251)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_32" data-name="Line 32" y1="20" x2="18" transform="matrix(0.309, -0.951, 0.951, 0.309, 2218.351, 1250)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_33" data-name="Line 33" y1="4" x2="29" transform="matrix(0.309, -0.951, 0.951, 0.309, 2072.89, 1084.515)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_34" data-name="Line 34" y1="13" x2="24" transform="matrix(0.309, -0.951, 0.951, 0.309, 2071.246, 1003.063)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_38" data-name="Line 38" y1="10" x2="20" transform="matrix(0.309, -0.951, 0.951, 0.309, 2242.632, 1372.41)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_39" data-name="Line 39" x1="3.373" y1="24.523" transform="translate(2242.823 1317.5)" fill="none" stroke="#fff" stroke-width="7"/>
+      <line id="Line_40" data-name="Line 40" x1="1.161" y1="23" transform="translate(2239.662 1276.5)" fill="none" stroke="#fff" stroke-width="7"/>
+    </g>
+    <text id="GÆNGER" transform="translate(189 261)" fill="#fff" font-size="163" font-family="Anton-Regular, Anton" letter-spacing="0.1em"><tspan x="0" y="0">GÆNGER</tspan></text>
+    <text id="Din_vandreguide_i_Danmark" data-name="Din vandreguide i Danmark" transform="translate(196 345)" fill="#fff" font-size="54" font-family="Anton-Regular, Anton" letter-spacing="0.04em"><tspan x="0" y="0">Din vandreguide i Danmark</tspan></text>
+  </g>
+</svg>
