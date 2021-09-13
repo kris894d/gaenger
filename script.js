@@ -76,7 +76,7 @@ function vis(json) {
   json.forEach((omroder) => {
     if (filtrer == omroder.område || filtrer == "alle") {
       let klon = galleriTemplate.cloneNode(true).content;
-      //   klon.querySelector("img").src = "img/" + omroder.billede;
+      klon.querySelector("img").src = "img/" + omroder.billede;
       klon.querySelector("h2").textContent = omroder.navn;
       klon.querySelector(".kortbeskrivelse").textContent =
         omroder.kortbeskrivelse;
