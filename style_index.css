@@ -184,11 +184,11 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 #tekst_indhold {
   grid-column: 2 / 3;
-  margin: 135px;
+  margin: 100px;
   font-family: montserrat, sans-serif;
 }
 
@@ -196,6 +196,8 @@ li {
   grid-column: 1/2;
   /* margin-left: -70px;
   margin-top: -95px; */
+  line-height: 1.4;
+  text-align: center;
 }
 #tekst_indhold img {
   grid-column: 1/2;
@@ -208,6 +210,8 @@ li {
   grid-column: 1/2;
   /* margin-left: -70px;
   margin-top: 0px; */
+  line-height: 1.4;
+  text-align: center;
 }
 
 /*Tekst_indhold - 1. sektion - Mobil - SLUT*/
@@ -293,6 +297,7 @@ footer {
   padding: 25px;
   font-size: 0.6rem;
   gap: 10px;
+  font-family: montserrat, sans-serif;
 }
 
 footer img {
@@ -316,11 +321,20 @@ footer .p1 {
 }
 
 @media (min-width: 768px) {
-  .navbar {
+  .burgerButton {
     display: none;
   }
+  .navbar .navbarLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+  }
+
   header {
-    display: none;
     transition-delay: 2s;
     display: flex;
     justify-content: space-between;
@@ -358,7 +372,6 @@ footer .p1 {
     font-size: 1.4rem;
     font-weight: 400;
     gap: 40px;
-    margin-left: 640px;
   }
 
   #menu a {
@@ -528,7 +541,7 @@ footer .p1 {
   }
 
   header img {
-    width: 20vw;
+    width: 17vw;
   }
 
   header nav {
@@ -542,11 +555,12 @@ footer .p1 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding: 0px;
     font-size: 1.4rem;
     font-weight: 400;
     gap: 40px;
-    margin-left: 550px;
+    margin-left: 1000px;
+    height: 1%;
   }
 
   #menu a {
@@ -555,6 +569,10 @@ footer .p1 {
     font-size: 1.2rem;
     display: block;
     padding: 5px;
+  }
+
+  .navbar {
+    height: 85px;
   }
 
   li {
@@ -577,7 +595,7 @@ footer .p1 {
   #tekst_indhold {
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
-    gap: 25px;
+    gap: 0px;
   }
   #tekst_indhold {
     grid-column: 2 / 3;
@@ -693,7 +711,7 @@ footer .p1 {
   }
 
   footer img {
-    width: 20vw;
+    width: 12vw;
   }
   footer .social img {
     width: 4vw;
@@ -701,7 +719,7 @@ footer .p1 {
   }
 
   footer p {
-    font-size: 20px;
+    font-size: 14px;
   }
 
   footer #footer {
@@ -709,7 +727,7 @@ footer .p1 {
   }
 
   footer .p1 {
-    margin-left: 600px;
+    margin-left: 845px;
   }
 }
 
