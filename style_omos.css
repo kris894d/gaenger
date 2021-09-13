@@ -56,6 +56,22 @@ p {
   text-align: left;
 }
 
+.ikon_kikkert {
+  display: none;
+}
+
+.ikon_telt {
+  display: none;
+}
+
+.ikon_bål {
+  display: none;
+}
+
+.ikon_trold {
+  display: none;
+}
+
 /*  */
 @media (min-width: 700px) {
   #section_om_os {
