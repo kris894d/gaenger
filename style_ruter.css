@@ -172,3 +172,18 @@ p {
 #galleri:hover .overlay {
   opacity: 1;
 }
+
+/* #popup article img {
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#popup article {
+  width: 55vw;
+  display: grid;
+  margin: 4rem auto;
+  border-radius: 25px;
+  padding: 12px;
+  background-color: white;
+} */
