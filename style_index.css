@@ -194,28 +194,31 @@ li {
 
 #tekst_indhold .tp1 {
   grid-column: 1/2;
-  margin-left: -70px;
-  margin-top: -95px;
+  /* margin-left: -70px;
+  margin-top: -95px; */
 }
 #tekst_indhold img {
   grid-column: 1/2;
   grid-row: 2/4;
-  margin-left: -27px;
-  margin-top: -15px;
+  /* margin-left: -27px;
+  margin-top: -15px; */
 }
+
 #tekst_indhold .tp2 {
   grid-column: 1/2;
-  margin-left: -70px;
-  margin-top: 0px;
+  /* margin-left: -70px;
+  margin-top: 0px; */
 }
 
-/*Tekst_indhold - 1. sektion - Tablet - SLUT*/
+/*Tekst_indhold - 1. sektion - Mobil - SLUT*/
 
-/*galleri_indhold - 2. sektion - Tablet*/
+/*galleri_indhold - 2. sektion - Mobil*/
 .overskrift {
-  text-align: center;
   border-bottom: 2px solid black;
-  padding: 10px;
+  padding: 15px;
+  width: 65%;
+  margin-left: 75px;
+  font-size: 15px;
 }
 
 #galleri_indhold .wrapper img {
@@ -233,7 +236,7 @@ li {
 .so {
   grid-row: 1 / 4;
 }
-/*galleri_indhold - 2. sektion - Tablet - SLUT*/
+/*galleri_indhold - 2. sektion - Mobil - SLUT*/
 
 /*ikoner_indhold - 3. sektion - Tablet*/
 #ikoner_indhold .ikoner_wrapper img {
@@ -263,15 +266,16 @@ h2 {
   text-align: center;
   border-bottom: 2px solid black;
   padding: 15px;
-  width: 50%;
-  margin-left: 350px;
+  width: 65%;
+  margin-left: 75px;
+  font-size: 15px;
 }
 
 #insta_indhold .insta_wrapper img {
   display: block;
-  width: 50%;
-  height: 75px;
-  padding: 10px;
+  width: 85%;
+  height: auto;
+  padding: 7px;
   margin: 10px;
 }
 
@@ -279,8 +283,6 @@ h2 {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 14px;
-  padding: 90px;
-  margin-top: -70px;
 }
 
 /**Footer - starter**/
@@ -294,7 +296,7 @@ footer {
 }
 
 footer img {
-  width: 20vw;
+  width: 33vw;
 }
 footer .social img {
   width: 4vw;
@@ -302,7 +304,7 @@ footer .social img {
 }
 
 footer p {
-  font-size: 16px;
+  font-size: 10px;
 }
 
 footer #footer {
@@ -310,7 +312,7 @@ footer #footer {
 }
 
 footer .p1 {
-  margin-left: 200px;
+  margin-left: 0px;
 }
 
 @media (min-width: 768px) {
@@ -397,10 +399,14 @@ footer .p1 {
 
   #tekst_indhold p {
     grid-column: 2/2;
+    margin-left: none;
+    margin-top: none;
   }
   #tekst_indhold img {
     grid-column: 1/2;
     grid-row: 1/3;
+    margin-left: none;
+    margin-top: none;
   }
   /*Tekst_indhold - 1. sektion - Tablet - SLUT*/
 
@@ -595,6 +601,7 @@ footer .p1 {
   #tekst_indhold p {
     margin-top: 30px;
     font-family: montserrat, sans-serif;
+    font-size: 1.2rem;
   }
 
   /*galleri_indhold - 2. sektion*/
@@ -605,6 +612,7 @@ footer .p1 {
     width: 50%;
     margin-left: 350px;
     margin-top: -40px;
+    font-size: 30px;
   }
 
   #galleri_indhold .wrapper img {
@@ -662,6 +670,17 @@ footer .p1 {
     grid-template-columns: auto auto auto auto;
     grid-gap: 14px;
     padding: 103px;
+    margin-top: -65px;
+  }
+
+  .overskrift2 {
+    text-align: center;
+    border-bottom: 2px solid black;
+    padding: 15px;
+    width: 50%;
+    margin-left: 350px;
+    margin-top: 55px;
+    font-size: 30px;
   }
   /**Footer - starter**/
   footer {

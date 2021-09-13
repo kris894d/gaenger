@@ -5,6 +5,168 @@
   background-color: white;
 }
 
+/*Burgermenu*/
+.burgerButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.streg1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-0.5rem);
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.streg1.aktiv {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.streg2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.streg2.aktiv {
+  opacity: 0;
+}
+
+.streg3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(0.5rem);
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.streg3.aktiv {
+  transform: translateY(0) rotate(45deg);
+}
+
+/*NavBar*/
+.navbar {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 100%;
+  height: 100px;
+  transition: transform 0.3s;
+}
+
+.navbar ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+
+  list-style: none;
+  flex-direction: column;
+  margin: 35px;
+}
+
+.navbar .navbarLinks {
+  position: fixed;
+  top: 70px;
+  left: 0px;
+  width: 45vw;
+  height: 27vh;
+  display: none;
+}
+
+nav .navbarLinks.aktiv {
+  display: block;
+  background-color: #5c6f49;
+}
+
+.navbar .navbarLinks li {
+  list-style: none;
+}
+
+.navbar .navbarLinks li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Header*/
+header {
+  display: none;
+  transition-delay: 2s;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  padding: 1rem 1.5rem;
+  gap: 20px;
+  background-color: #5c6f49;
+}
+
+a {
+  text-decoration: none;
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+header img {
+  width: 32vw;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 27;
+  margin-left: 14px;
+  margin-top: 0px;
+}
+
+#menu a {
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+  padding: 5px;
+  font-family: anton, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
 #section_kontakt {
   font-family: montserrat, sans serif;
   display: grid;

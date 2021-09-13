@@ -23,19 +23,32 @@
   <body>
     <!-- Menu med logo -->
     <header class="menubar">
-      <div class="logo">
-        <a href="#index"><img src="" alt="" /></a>
+      <div id="header" style="display: flex">
+        <a href="index.html">
+          <img src="svg/logo_hvidstreg.svg" alt="logo" />
+        </a>
+        <!--BurgerMenu-->
+        <nav class="navbar">
+          <div class="burgerButton">
+            <div class="streg1"></div>
+            <div class="streg2"></div>
+            <div class="streg3"></div>
+          </div>
+          <div class="navbarLinks">
+            <ul id="menu">
+              <li>
+                <a href="ruter.html">Vandreruter</a>
+              </li>
+              <li>
+                <a href="om_os.html">Om GÆNGER</a>
+              </li>
+              <li>
+                <a href="kontakt.html">Kontakt os her</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-
-      <!-- Navigations bar - linker til alle sider -->
-      <nav>
-        <ul>
-          <li><a href="ruter.html">Find din rute</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="om_os.html">Om GÆNGER</a></li>
-          <li><a href="kontakt.html">Kontakt</a></li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -66,5 +79,6 @@
         </article>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
