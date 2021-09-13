@@ -70,18 +70,20 @@ function vis(json) {
 
   const container = document.querySelector("#liste");
   const galleriTemplate = document.querySelector("template");
+  const splash = document.querySelector(".splashbillede");
   container.textContent = "";
 
   // hvert objekt i array(liste) kan rulles ud hvert for sig og ligge i rigtigt orden 0-3fx //
   json.forEach((omroder) => {
     if (filtrer == omroder.område || filtrer == "alle") {
       let klon = galleriTemplate.cloneNode(true).content;
-      klon.querySelector("img").src = "img/" + omroder.billede;
+      klon.querySelector("img").src = "img/" + omroder.billed + ".jpg";
       klon.querySelector("h2").textContent = omroder.navn;
       klon.querySelector(".kortbeskrivelse").textContent =
         omroder.kortbeskrivelse;
       klon.querySelector(".km").textContent = omroder.km;
       klon.querySelector(".tid").textContent = omroder.tid;
+      splash.querySelector("img").src = "img/" + omroder.splashbillede + ".jpg";
 
       container.appendChild(klon);
     }
