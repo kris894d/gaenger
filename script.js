@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", start);
 
 let omroder;
 let filtrer = "alle";
+const splash = document.querySelector(".splashbillede");
 
 // // første funktion - henter dataen fra html///
 function start() {
@@ -56,6 +57,8 @@ function filtrerOmroder() {
   document.querySelector(".valgt").classList.remove("valgt");
   this.classList.add("valgt");
   header.textContent = this.textContent;
+
+  splash.querySelector("img").src = "img/" + filtrer + "_splash.jpg";
 }
 
 // hentData fanger vores ruter og lister(arrays)i json fra restd///
@@ -70,7 +73,7 @@ function vis(json) {
 
   const container = document.querySelector("#liste");
   const galleriTemplate = document.querySelector("template");
-  const splash = document.querySelector(".splashbillede");
+
   container.textContent = "";
 
   // hvert objekt i array(liste) kan rulles ud hvert for sig og ligge i rigtigt orden 0-3fx //
@@ -83,7 +86,8 @@ function vis(json) {
         omroder.kortbeskrivelse;
       klon.querySelector(".km").textContent = omroder.km;
       klon.querySelector(".tid").textContent = omroder.tid;
-      splash.querySelector("img").src = "img/" + omroder.splashbillede + ".jpg";
+      // console.log(omroder.splashbillede);
+      // splash.querySelector("img").src = "img/" + "splash_fyn" + ".jpg";
 
       klon
         .querySelector("article")

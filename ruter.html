@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style_ruter.css" />
     <title>GÆNGER</title>
   </head>
@@ -39,7 +38,7 @@
     </header>
     <section class="splashbillede">
       <img src="" alt="" class="" />
-      <h2>Alle ruter</h2>
+      <h2 class="center">Alle ruter</h2>
       <h3>Vælg din landsdel</h3>
     </section>
 
@@ -47,7 +46,7 @@
     <nav id="nav_filtrer">
       <button data-område="alle" class="valgt">Alle ruter</button>
       <button data-område="Sjælland">Sjælland</button>
-      <button data-område="Fyn">Fyn</button>
+      <button data-område="fyn">Fyn</button>
       <button data-område="Jylland">Jylland</button>
       <button data-område="Øerne">Øerne</button>
     </nav>
@@ -78,7 +77,7 @@
             <img src="svg/telt.svg" alt="" class="telt" />
           </div>
           <div class="bålP">
-            <img src="svg/bål.svg" alt="" class="bål" />
+            <img src="svg/baal.svg" alt="" class="bål" />
             <h4>Kig her</h4>
           </div>
           <div class="shelterP">
@@ -94,7 +93,7 @@
             <h4></h4>
           </div>
           <div>
-            <img src="svg/færge.svg" alt="" class="færge" />
+            <img src="svg/skib.svg" alt="" class="færge" />
             <h4></h4>
           </div>
         </div>
@@ -103,18 +102,20 @@
 
     <!-- Footer med oplysning og sociale medier -->
     <footer>
-      <img src="img/vejskilt.svg" alt="logo" />
-      <h3>
-        Kontakt:
-        <address>gaenger@gmail.com</address>
-      </h3>
-      <h3>Del din oplevelse:</h3>
-      <a href="">
-        <img src="img/vejskilt.svg" alt="face" />
-      </a>
-      <a href="">
-        <img src="img/vejskilt.svg" alt="insta" />
-      </a>
+      <div id="footer" style="display: flex">
+        <a href="index.html">
+          <img src="svg/logo_hvidstreg.svg" alt="logo"
+        /></a>
+        <p class="p1">Kontakt: <br />gaenger@gmail.com</p>
+        <div class="social">
+          <p>
+            Del din oplevelse: <br /><a href=""
+              ><img src="svg/Instagram.svg" alt="insta"
+            /></a>
+            <a href=""><img src="svg/Facebook.svg" alt="face" /></a>
+          </p>
+        </div>
+      </div>
     </footer>
     <script src="script.js"></script>
   </body>
