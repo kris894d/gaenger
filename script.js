@@ -88,4 +88,8 @@ function vis(json) {
       container.appendChild(klon);
     }
   });
+  document
+    .querySelector("#luk")
+    .addEventListener("click", () => (popup.style.display = "none"));
+    function visDetaljer(omrod)
 }
