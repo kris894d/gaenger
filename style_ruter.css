@@ -173,6 +173,31 @@ p {
   opacity: 1;
 }
 
+#popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  overflow: scroll;
+}
+
+#popup article {
+  width: 85vw;
+  display: grid;
+  margin: 4rem auto;
+  border-radius: 25px;
+  padding: 12px;
+  background-color: #5c6f49;
+}
+
+#popup article img {
+  width: 320px;
+}
+
 #popup article img {
   width: 400px;
   display: block;
@@ -185,20 +210,5 @@ p {
   margin: 4rem auto;
   border-radius: 25px;
   padding: 12px;
-  background-color: white;
+  background-color: #5c6f49;
 }
-
-/* #popup article img {
-  width: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#popup article {
-  width: 55vw;
-  display: grid;
-  margin: 4rem auto;
-  border-radius: 25px;
-  padding: 12px;
-  background-color: white;
-} */
