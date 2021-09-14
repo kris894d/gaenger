@@ -167,7 +167,7 @@ li {
   list-style: none;
 }
 
-/* lav mobile first */
+/* mobile */
 #section_om_os {
   gap: 20px;
   text-align: center;
@@ -180,7 +180,7 @@ li {
 
 .splash {
   width: 200%;
-  height: 43vh;
+  height: 33vh;
   background-size: cover;
   background-position: 70%;
   place-content: space-around;
