@@ -237,17 +237,52 @@ p {
   grid-row: 1/4;
 }
 
-/**IKONER TIL POPUP**/
-#popup .ikon_wrapper {
-  display: grid;
-  grid-column: 1/3;
-  grid-row: 5/7;
-  grid-template-columns: 1fr 1fr 2fr;
-  grid-template-rows: 1fr 1fr;
+#popup .ikon_wrapper img {
+  height: 5rem;
 }
 
-#popup .kikkert {
-  width: 3rem;
+/**IKONER TIL POPUP**/
+#popup .kort {
+  grid-row: 2;
+}
+
+#popup .ikon_wrapper {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+/**Defination af ikoner**/
+.ikon_wrapper .tidP {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.ikon_wrapper .bålP {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.ikon_wrapper .shelterP {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.ikon_wrapper .kikkertP {
+  grid-column: 1/2;
+  grid-row: 2/2;
+}
+
+.ikon_wrapper .troldP {
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+.ikon_wrapper .skibP {
+  grid-column: 3/4;
+  grid-row: 2/2;
 }
 
 /**TEKSTER TIL POPUP**/
@@ -263,11 +298,14 @@ p {
 
 #popup h4 {
   font-family: montserrat, sans-serif;
+  text-align: center;
+  color: white;
 }
 
 #popup .kortbeskrivelse {
   grid-column: 2/3;
-  grid-row: 2/4;
+  grid-row: 1/4;
+  margin-top: 95px;
 }
 
 #popup .km {
