@@ -85,11 +85,27 @@ function vis(json) {
       klon.querySelector(".tid").textContent = omroder.tid;
       splash.querySelector("img").src = "img/" + omroder.splashbillede + ".jpg";
 
+      klon
+        .querySelector("article")
+        .addEventListener("click", () => visDetaljer(omroder));
+
       container.appendChild(klon);
     }
   });
   document
     .querySelector("#luk")
     .addEventListener("click", () => (popup.style.display = "none"));
-    function visDetaljer(omrod)
+
+  function visDetaljer(omroder) {
+    console.log(omroder);
+    const popup = document.querySelector("#popup");
+    popup.style.display = "block";
+
+    popup.querySelector("img").src = "img/" + omroder.billed + ".jpg";
+    popup.querySelector("h2").textContent = omroder.navn;
+    popup.querySelector(".kortbeskrivelse").textContent =
+      omroder.kortbeskrivelse;
+    popup.querySelector(".km").textContent = omroder.km;
+    popup.querySelector(".tid").textContent = omroder.tid;
+  }
 }
