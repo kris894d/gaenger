@@ -80,7 +80,7 @@ function vis(json) {
 
   container.textContent = "";
 
-  // hvert objekt i array(liste) kan rulles ud hvert for sig og ligge i rigtigt orden 0-3fx //
+  // hvert objekt i array(liste) kan rulles ud hver for sig og ligge i rigtigt orden 0-3fx //
   json.forEach((omroder) => {
     if (filtrer == omroder.område || filtrer == "alle") {
       let klon = galleriTemplate.cloneNode(true).content;
@@ -90,8 +90,6 @@ function vis(json) {
         omroder.kortbeskrivelse;
       klon.querySelector(".km").textContent = omroder.km;
       klon.querySelector(".tid").textContent = omroder.tid;
-      // console.log(omroder.splashbillede);
-      // splash.querySelector("img").src = "img/" + "splash_fyn" + ".jpg";
 
       klon
         .querySelector("article")
@@ -100,6 +98,8 @@ function vis(json) {
       container.appendChild(klon);
     }
   });
+
+  // hvert objekt i array(liste) kan blive kopiret over i vores popup vindue, indenfor det enkelte element //
   document
     .querySelector("#luk")
     .addEventListener("click", () => (popup.style.display = "none"));
