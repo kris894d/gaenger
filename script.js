@@ -1,4 +1,4 @@
-//Burgermenu
+//const lavet til burgermenu. Navne defineret i HTML.
 const burgerButton = document.querySelector(".burgerButton");
 const streg1 = document.querySelector(".streg1");
 const streg2 = document.querySelector(".streg2");
@@ -13,6 +13,7 @@ function sidenVises() {
   burgerButton.addEventListener("click", open);
 }
 
+// Definere hvad der skal ske, når der er blevet klikket på burgerButton.
 function open() {
   console.log("open menu");
   streg1.classList.toggle("aktiv");
@@ -35,13 +36,15 @@ const options = {
   },
 };
 
+//Når alt content er loaded, så går vi ned i function "start"//
 document.addEventListener("DOMContentLoaded", start);
 
+//Her bliver vores filtrering defineret. let filtrer = "alle", definere at den skal starte ved alle.//
 let omroder;
 let filtrer = "alle";
 const splash = document.querySelector(".splashbillede");
 
-// // første funktion - henter dataen fra html///
+//første funktion - henter dataen fra html//
 function start() {
   const filtrerKnapper = document.querySelectorAll("nav button");
   filtrerKnapper.forEach((knap) =>
@@ -61,7 +64,7 @@ function filtrerOmroder() {
   splash.querySelector("img").src = "img/" + filtrer + "_splash.jpg";
 }
 
-// hentData fanger vores ruter og lister(arrays)i json fra restd///
+// hentData fanger vores ruter og lister(arrays)i json fra restd//
 async function hentData() {
   const rute = await fetch(url, options);
   const json = await rute.json();
@@ -71,6 +74,7 @@ async function hentData() {
 function vis(json) {
   console.log(json);
 
+  //container henter liste elementer fra HTML og galleriTemplate henter template elementer i HTML//
   const container = document.querySelector("#liste");
   const galleriTemplate = document.querySelector("template");
 
