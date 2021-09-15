@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/*MENUBAR - MOBILE*/
 /*Burgermenu*/
 .burgerButton {
   position: absolute;
@@ -12,8 +13,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 2rem;
+  height: 3rem;
   cursor: pointer;
   z-index: 100;
 }
@@ -67,12 +68,11 @@
   z-index: 10;
   width: 100vw;
   height: 100vh;
-
   display: flex;
   justify-content: space-evenly;
   margin: 0;
-  width: 100%;
-  height: 100px;
+  width: 91%;
+  height: 40px;
   transition: transform 0.3s;
 }
 
@@ -88,8 +88,8 @@
 
 .navbar .navbarLinks {
   position: fixed;
-  top: 70px;
-  left: 0px;
+  top: 75px;
+  left: 55%;
   width: 45vw;
   height: 27vh;
   display: none;
@@ -132,7 +132,7 @@ a {
 }
 
 header img {
-  width: 32vw;
+  width: 40vw;
 }
 
 header nav {
@@ -146,7 +146,7 @@ header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 10px;
+  padding: 7px;
   font-size: 1.2rem;
   font-weight: 27;
   margin-left: 14px;
@@ -165,6 +165,7 @@ header nav {
 li {
   list-style: none;
 }
+/*MENUBAR - MOBILE - SLUT*/
 
 /**SPLASHBILLEDE**/
 
@@ -206,6 +207,12 @@ li {
 }
 
 #tekst_indhold .tp2 {
+  grid-column: 1/2;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#tekst_indhold p {
   grid-column: 1/2;
   line-height: 1.4;
   text-align: center;
@@ -323,26 +330,49 @@ footer .p1 {
   .burgerButton {
     display: none;
   }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding: 1rem 1.5rem;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.6rem;
+    font-weight: 400;
+    gap: 20px;
+  }
+
   .navbar .navbarLinks {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
   }
 
+  .navbar .navbarLinks {
+    position: fixed;
+    top: -7%;
+    left: 55%;
+    width: 45vw;
+    height: 27vh;
+  }
+
   .navbar ul {
     flex-direction: row;
   }
 
-  header {
-    transition-delay: 2s;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    padding: 1rem 1.5rem;
-    gap: 20px;
+  header img {
+    width: 17vw;
   }
 
   a {
@@ -353,7 +383,7 @@ footer .p1 {
   }
 
   header img {
-    width: 32vw;
+    width: 17vw;
   }
 
   header nav {
@@ -517,67 +547,15 @@ footer .p1 {
 }
 
 @media (min-width: 1200px) {
-  /**MENUBAR**/
-  header {
-    display: none;
-    transition-delay: 2s;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    padding: 1rem 1.5rem;
-    gap: 20px;
-    background-color: #5c6f49;
-  }
-
-  a {
-    text-decoration: none;
-    font-family: futura-pt, sans-serif;
-    font-weight: bold;
-    color: white;
-  }
-
-  header img {
-    width: 17vw;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-
   #menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0px;
-    font-size: 1.4rem;
+    padding: 100px;
+    font-size: 0.6rem;
     font-weight: 400;
-    gap: 40px;
-    margin-left: 1000px;
-    height: 1%;
+    gap: 20px;
   }
-
-  #menu a {
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    display: block;
-    padding: 5px;
-  }
-
-  .navbar {
-    height: 85px;
-  }
-
-  li {
-    list-style: none;
-  }
-  /**MENUBAR - slutter**/
 
   #splash {
     grid-column: 1/4;

@@ -4,21 +4,112 @@
   padding: 0;
 }
 
+/*MENUBAR - MOBILE*/
+/*Burgermenu*/
 .burgerButton {
-  display: none;
-}
-.navbar .navbarLinks {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-left: -300px;
+  flex-direction: column;
+  justify-content: center;
+  width: 2rem;
+  height: 3rem;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.streg1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-0.5rem);
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.streg1.aktiv {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.streg2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.streg2.aktiv {
+  opacity: 0;
+}
+
+.streg3 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(0.5rem);
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.streg3.aktiv {
+  transform: translateY(0) rotate(45deg);
+}
+
+/*NavBar*/
+.navbar {
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  width: 91%;
+  height: 40px;
+  transition: transform 0.3s;
 }
 
 .navbar ul {
-  flex-direction: row;
+  display: flex;
+  height: 100%;
+  justify-content: space-evenly;
+
+  list-style: none;
+  flex-direction: column;
+  margin: 35px;
 }
 
-/**MENUBAR**/
+.navbar .navbarLinks {
+  position: fixed;
+  top: 75px;
+  left: 55%;
+  width: 45vw;
+  height: 27vh;
+  display: none;
+}
+
+nav .navbarLinks.aktiv {
+  display: block;
+  background-color: #5c6f49;
+}
+
+.navbar .navbarLinks li {
+  list-style: none;
+}
+
+.navbar .navbarLinks li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Header*/
 header {
   display: none;
   transition-delay: 2s;
@@ -41,7 +132,7 @@ a {
 }
 
 header img {
-  width: 17vw;
+  width: 40vw;
 }
 
 header nav {
@@ -55,12 +146,11 @@ header nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 0px;
-  font-size: 1.4rem;
-  font-weight: 400;
-  gap: 40px;
-  margin-left: 1000px;
-  height: 1%;
+  padding: 7px;
+  font-size: 1.2rem;
+  font-weight: 27;
+  margin-left: 14px;
+  margin-top: 0px;
 }
 
 #menu a {
@@ -69,26 +159,17 @@ header nav {
   font-size: 1.2rem;
   display: block;
   padding: 5px;
-}
-
-.navbar {
-  height: 85px;
-}
-
-#nav_filtrer button {
-  border: 2px solid black;
-  border-radius: 21px;
-  padding: 10px;
-}
-
-.valgt {
-  background-color: #5c6f49;
+  font-family: anton, sans-serif;
 }
 
 li {
   list-style: none;
 }
-/**MENUBAR - slutter**/
+/*MENUBAR - MOBILE - SLUT*/
+
+#galleri h2 {
+  color: black;
+}
 
 img {
   width: 100%;
@@ -103,6 +184,14 @@ section .splashbillede {
   max-width: auto;
   width: 100vw;
   margin: 0 auto;
+}
+
+.center {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
 }
 
 #liste {
@@ -129,6 +218,7 @@ h2 {
   text-align: center;
   font-family: anton, sans-serif;
   margin-bottom: 6px;
+  color: white;
 }
 
 h3 {
@@ -138,7 +228,7 @@ h3 {
 }
 
 #nav_filtrer {
-  display: flex;
+  display: block;
   justify-content: center;
   font-size: 39px;
   gap: 100px;
@@ -200,10 +290,8 @@ p {
 }
 
 #popup article {
-  width: 75vw;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: auto;
+  display: block;
   margin: 4rem auto;
   border-radius: 25px;
   padding: 12px;
@@ -211,25 +299,7 @@ p {
 }
 
 #popup article .image {
-  display: grid;
-  width: 200px;
-  /* display: block; */
-  grid-column: 1/2;
-  grid-row: 1/4;
-}
-#popup article {
-  width: 75vw;
-  display: grid;
-  margin: 4rem auto;
-  border-radius: 25px;
-  padding: 35px;
-  background-color: #5c6f49;
-}
-
-#popup h2 {
-  text-align: left;
-  grid-column: 2/2;
-  color: white;
+  padding: 30px;
 }
 
 #popup .image {
@@ -238,7 +308,7 @@ p {
 }
 
 #popup .ikon_wrapper img {
-  height: 5rem;
+  height: 3.5rem;
 }
 
 /**IKONER TIL POPUP**/
@@ -305,7 +375,8 @@ p {
 #popup .kortbeskrivelse {
   grid-column: 2/3;
   grid-row: 1/4;
-  margin-top: 95px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 #popup .km {
@@ -317,7 +388,13 @@ p {
 #popup .tid {
   grid-column: 2/3;
   grid-row: 1/2;
-  margin-top: 60px;
+  margin-top: 7px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
 }
 
 /**Footer - starter**/
@@ -351,7 +428,141 @@ footer .p1 {
   margin-left: 0px;
 }
 
+@media (min-width: 768px) {
+  .burgerButton {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding: 1rem 1.5rem;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 0.6rem;
+    font-weight: 400;
+    gap: 20px;
+  }
+
+  .navbar .navbarLinks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .navbar .navbarLinks {
+    position: fixed;
+    top: -7%;
+    left: 55%;
+    width: 45vw;
+    height: 27vh;
+  }
+
+  .navbar ul {
+    flex-direction: row;
+  }
+
+  header img {
+    width: 17vw;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: futura-pt, sans-serif;
+    font-weight: bold;
+    color: white;
+  }
+
+  header img {
+    width: 17vw;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    gap: 40px;
+  }
+
+  #menu a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    padding: 5px;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  /*MENUBAR - TABLET - SLUT*/
+}
+
 @media (min-width: 1200px) {
+  #popup article {
+    width: 75vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 4rem auto;
+    border-radius: 25px;
+    padding: 12px;
+    background-color: #5c6f49;
+  }
+
+  #popup h2 {
+    text-align: left;
+    grid-column: 2/2;
+    color: white;
+  }
+
+  #popup .kortbeskrivelse {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin-top: 95px;
+    text-align: center;
+    text-align: start;
+  }
+
+  #popup article .image {
+    padding: 0px;
+    display: grid;
+    width: 200px;
+    grid-column: 1/2;
+    grid-row: 1/4;
+  }
+
+  #popup .ikon_wrapper img {
+    height: 5rem;
+  }
+
+  #popup .tid {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 60px;
+  }
   /**Footer - starter**/
   footer {
     background-color: #5c6f49;
@@ -384,10 +595,9 @@ footer .p1 {
 
   .center {
     position: absolute;
-    top: 43%;
+    top: 68%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 10rem;
-    color: white;
   }
 }
