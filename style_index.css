@@ -180,6 +180,24 @@ li {
   background-image: url(img/Splash.jpg);
 }
 
+.forside_splash_tekst {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px #5c6f49;
+  font-family: montserrat, sans serif;
+  text-align: center;
+  margin-top: 160px;
+}
+
+.forside_splash_tekst2 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px #5c6f49;
+  font-family: montserrat, sans serif;
+  text-align: center;
+  margin-bottom: 106px;
+}
+
 /*Tekst_indhold - 1. sektion - mobile*/
 #tekst_indhold {
   display: grid;
@@ -202,7 +220,7 @@ li {
   height: 40vw;
   grid-column: 1/2;
   grid-row: 2/4;
-  margin-left: 85px;
+  margin-left: 120px;
   margin-top: 10px;
 }
 
@@ -249,7 +267,7 @@ li {
 /*ikoner_indhold - 3. sektion - Tablet*/
 #ikoner_indhold .ikoner_wrapper img {
   display: block;
-  width: 50%;
+  width: 85%;
   height: 80px;
   padding: 5px;
   margin: 9px;
@@ -260,7 +278,17 @@ li {
   gap: 0px;
   padding-left: 60px;
   padding-top: 0px;
-  padding-right: 10px;
+  padding-right: 40px;
+}
+
+h5 {
+  margin-left: 6px;
+  font-family: montserrat;
+}
+
+.overskrift_ikon {
+  margin-bottom: 70px;
+  font-size: 15px;
 }
 
 /*insta_indhold - 4. sektion*/
@@ -493,6 +521,10 @@ footer .p1 {
     padding-right: 10px;
   }
 
+  .overskrift_ikon {
+    margin-bottom: 7rem;
+  }
+
   /*insta_indhold - 4. sektion*/
 
   h2 {
@@ -643,6 +675,11 @@ footer .p1 {
     padding-top: 0px;
     padding-right: 10px;
     margin-top: -75px;
+  }
+
+  h5 {
+    margin-left: 47px;
+    font-family: montserrat;
   }
 
   /*insta_indhold - 4. sektion*/
