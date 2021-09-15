@@ -236,6 +236,36 @@ p {
 .ikon_trold {
   display: none;
 }
+/**Footer - starter**/
+footer {
+  background-color: #5c6f49;
+  color: white;
+  display: flex;
+  padding: 23px;
+  font-size: 0.6rem;
+  gap: 10px;
+  font-family: montserrat, sans-serif;
+}
+
+footer img {
+  width: 33vw;
+}
+footer .social img {
+  width: 4vw;
+  text-align: end;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+footer #footer {
+  gap: 45px;
+}
+
+footer .p1 {
+  margin-right: -13px;
+}
 
 /* ************media media media media************* */
 @media (min-width: 768px) {
