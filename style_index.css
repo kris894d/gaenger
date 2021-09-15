@@ -181,19 +181,19 @@ li {
 }
 
 .forside_splash_tekst {
-  font-size: 40px;
+  font-size: 20px;
   color: white;
   text-shadow: 2px 2px #5c6f49;
-  font-family: montserrat, sans serif;
+  font-family: anton, sans serif;
   text-align: center;
   margin-top: 160px;
 }
 
 .forside_splash_tekst2 {
-  font-size: 40px;
+  font-size: 20px;
   color: white;
   text-shadow: 2px 2px #5c6f49;
-  font-family: montserrat, sans serif;
+  font-family: anton, sans serif;
   text-align: center;
   margin-bottom: 106px;
 }
@@ -287,7 +287,7 @@ h5 {
 }
 
 .overskrift_ikon {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   font-size: 15px;
 }
 
@@ -598,6 +598,14 @@ footer .p1 {
     display: grid;
     place-content: space-around;
     background-image: url(img/Splash.jpg);
+  }
+
+  .forside_splash_tekst {
+    font-size: 40px;
+  }
+
+  .forside_splash_tekst2 {
+    font-size: 40px;
   }
 
   /*Tekst_indhold - 1. sektion*/
