@@ -238,12 +238,15 @@ h3 {
 #nav_filtrer button {
   font-size: 20px;
   font-family: montserrat, sans-serif;
-  background: none;
-  border: none;
   cursor: pointer;
-  border-style: 2px solid black;
+  border: 2px solid black;
+  border-radius: 21px;
+  padding: 10px;
 }
 
+.valgt {
+  background-color: #5c6f49;
+}
 p {
   margin-top: 20px;
 }
@@ -259,6 +262,7 @@ p {
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  cursor: pointer;
 }
 
 .overlay {
@@ -267,12 +271,11 @@ p {
   background: rgba(37, 135, 65, 0.5); /* Black see-through */
   color: #5c6f49;
   width: 100%;
-  transition: 0.5s ease;
-  opacity: 0;
   color: #5c6f49;
   font-size: 20px;
   padding: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 #galleri:hover .overlay {
