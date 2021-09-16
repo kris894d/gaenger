@@ -594,6 +594,8 @@ p {
   }
 
   article {
+    /* border: 2px solid rgb(0, 0, 0); */
+
     padding: 10px;
   }
 }
