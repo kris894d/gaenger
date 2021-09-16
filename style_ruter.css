@@ -501,7 +501,7 @@ footer .p1 {
 
   a {
     text-decoration: none;
-    font-family: futura-pt, sans-serif;
+    font-family: anton, sans-serif;
     font-weight: bold;
     color: white;
   }
@@ -533,6 +533,7 @@ footer .p1 {
     font-size: 1.2rem;
     display: block;
     padding: 5px;
+    letter-spacing: 1px;
   }
 
   li {
