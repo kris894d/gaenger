@@ -202,135 +202,51 @@ footer .p1 {
 
 /******** START -  Menu - navigations bar IPAD 768 ********/
 @media (min-width: 768px) {
-  /* .burgerButton {
+  header img {
+    width: 25vw;
+  }
+  /*******SLUT -  Footer - IPAD 768 *******/
+  .navbar .navbarLinks.navbarLinks.aktiv {
+    left: 74%;
+  }
+
+  footer .p1 {
+    margin-left: 225px;
+  }
+
+  footer img {
+    width: 25vw;
+  }
+}
+
+/******** START -  Menu - navigations bar WEB 1200 ********/
+@media (min-width: 1200px) {
+  .burgerButton {
     display: none;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    z-index: 100;
-    top: 0;
-    padding: 1rem 1.5rem;
-    gap: 20px;
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-  }
-
-  #menu {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-    font-size: 0.6rem;
-    font-weight: 400;
-    gap: 20px;
   }
 
   .navbar .navbarLinks {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-  }
-
-  .navbar .navbarLinks {
-    position: fixed;
-    top: -7%;
-    left: 55%;
-    width: 45vw;
-    height: 27vh;
+    top: 0px;
+    right: 0px;
+    gap: 14px;
+    height: 18vh;
   }
 
   .navbar ul {
     flex-direction: row;
+    height: auto;
   }
 
   header img {
-    width: 17vw;
+    width: 15vw;
   }
 
-  a {
-    text-decoration: none;
-    font-family: futura-pt, sans-serif;
-    font-weight: bold;
-    color: white;
-  }
-
-  header img {
-    width: 17vw;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-  }
-} */
-  /********SLUT -  Menu - navigations bar IPAD 768 ********/
-
-  /******** START -  Footer - IPAD 768 ********/
-  /* footer {
-  background-color: #5c6f49;
-  color: white;
-  display: flex;
-  padding: 25px;
-  font-size: 0.6rem;
-  gap: 10px;
-}
-
-footer img {
-  width: 20vw;
-}
-footer .social img {
-  width: 4vw;
-  text-align: end;
-}
-
-footer p {
-  font-size: 16px;
-}
-
-footer #footer {
-  gap: 45px;
-}
-
-footer .p1 {
-  margin-left: 200px;
-} */
-  /*******SLUT -  Footer - IPAD 768 *******/
-
-  /******** START -  Menu - navigations bar WEB 1200 ********/
-
-  @media (min-width: 1200px) {
-    .burgerButton {
-      display: none;
-    }
-
-    .navbar .navbarLinks {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      top: 0px;
-      right: 0px;
-      gap: 14px;
-      height: 18vh;
-    }
-
-    .navbar ul {
-      flex-direction: row;
-      height: auto;
-    }
-
-    header img {
-      width: 15vw;
-    }
-
-    #menu {
-      margin-left: 0px;
-      gap: 36px;
-    }
+  #menu {
+    margin-left: 0px;
+    gap: 36px;
   }
 
   /********SLUT -  Menu - navigations bar WEB 1200 ********/
