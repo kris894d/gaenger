@@ -247,7 +247,14 @@ h3 {
   background-color: #5c6f49;
 }
 p {
-  margin-top: 20px;
+  margin-top: 9px;
+}
+
+#galleri .kortbeskrivelse,
+.tid,
+.km {
+  font-family: montserrat;
+  text-align: left;
 }
 
 #galleri:hover .image {

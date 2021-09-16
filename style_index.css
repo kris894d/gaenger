@@ -187,16 +187,9 @@ li {
   text-shadow: 2px 2px #5c6f49;
   font-family: anton, sans serif;
   text-align: center;
-  margin-top: 160px;
-}
-
-.forside_splash_tekst2 {
-  font-size: 20px;
-  color: white;
-  text-shadow: 2px 2px #5c6f49;
-  font-family: anton, sans serif;
-  text-align: center;
-  margin-bottom: 106px;
+  margin-top: 0px;
+  background-color: rgba(138, 138, 138, 0.486);
+  padding: 18px;
 }
 
 /*Tekst_indhold - 1. sektion - mobile*/
@@ -603,11 +596,7 @@ footer .p1 {
   }
 
   .forside_splash_tekst {
-    font-size: 40px;
-  }
-
-  .forside_splash_tekst2 {
-    font-size: 40px;
+    font-size: 33px;
   }
 
   /*Tekst_indhold - 1. sektion*/
