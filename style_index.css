@@ -4,9 +4,9 @@
   padding: 0;
 }
 
-/*MENUBAR - MOBILE*/
+/* MENUBAR - MOBILE
 /*Burgermenu*/
-.burgerButton {
+/* .burgerButton {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
@@ -61,10 +61,10 @@
 
 .streg3.aktiv {
   transform: translateY(0) rotate(45deg);
-}
+} */
 
 /*NavBar*/
-.navbar {
+/* .navbar {
   z-index: 10;
   width: 100vw;
   height: 100vh;
@@ -107,10 +107,10 @@ nav .navbarLinks.aktiv {
 .navbar .navbarLinks li a {
   text-decoration: none;
   color: white;
-}
+} */
 
 /*Header*/
-header {
+/* header {
   display: none;
   transition-delay: 2s;
   display: flex;
@@ -165,7 +165,8 @@ header nav {
 
 li {
   list-style: none;
-}
+} */
+
 /*MENUBAR - MOBILE - SLUT*/
 
 /**SPLASHBILLEDE**/
@@ -317,39 +318,8 @@ h2 {
   grid-gap: 14px;
 }
 
-/**Footer - starter**/
-footer {
-  background-color: #5c6f49;
-  color: white;
-  display: flex;
-  padding: 23px;
-  font-size: 0.6rem;
-  gap: 10px;
-  font-family: montserrat, sans-serif;
-}
-
-footer img {
-  width: 33vw;
-}
-footer .social img {
-  width: 4vw;
-  text-align: end;
-}
-
-footer p {
-  font-size: 10px;
-}
-
-footer #footer {
-  gap: 45px;
-}
-
-footer .p1 {
-  margin-right: -13px;
-}
-
 @media (min-width: 768px) {
-  .burgerButton {
+  /* .burgerButton {
     display: none;
   }
 
@@ -413,7 +383,7 @@ footer .p1 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-  }
+  } */
 
   /* denne er her to gange. med forskellige tal */
   /* #menu {
@@ -426,7 +396,7 @@ footer .p1 {
     gap: 40px;
   } */
 
-  #menu a {
+  /* #menu a {
     color: white;
     font-weight: bold;
     font-size: 1.2rem;
@@ -436,7 +406,7 @@ footer .p1 {
 
   li {
     list-style: none;
-  }
+  } */
 
   /**SPLASHBILLEDE**/
 
@@ -541,40 +511,10 @@ footer .p1 {
     grid-gap: 14px;
     padding: 103px;
   }
-
-  /**Footer - starter**/
-  footer {
-    background-color: #5c6f49;
-    color: white;
-    display: flex;
-    padding: 25px;
-    font-size: 0.6rem;
-    gap: 10px;
-  }
-
-  footer img {
-    width: 20vw;
-  }
-  footer .social img {
-    width: 4vw;
-    text-align: end;
-  }
-
-  footer p {
-    font-size: 16px;
-  }
-
-  footer #footer {
-    gap: 45px;
-  }
-
-  footer .p1 {
-    margin-left: 200px;
-  }
 }
 
 @media (min-width: 1200px) {
-  #menu {
+  /* #menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -582,7 +522,7 @@ footer .p1 {
     font-size: 0.6rem;
     font-weight: 400;
     gap: 20px;
-  }
+  } */
 
   #splash {
     grid-column: 1/4;
@@ -712,34 +652,5 @@ footer .p1 {
     margin-left: 350px;
     margin-top: 55px;
     font-size: 30px;
-  }
-  /**Footer - starter**/
-  footer {
-    background-color: #5c6f49;
-    color: white;
-    display: flex;
-    padding: 25px;
-    font-size: 0.6rem;
-    gap: 10px;
-  }
-
-  footer img {
-    width: 12vw;
-  }
-  footer .social img {
-    width: 4vw;
-    text-align: end;
-  }
-
-  footer p {
-    font-size: 14px;
-  }
-
-  footer #footer {
-    gap: 45px;
-  }
-
-  footer .p1 {
-    margin-left: 845px;
   }
 }

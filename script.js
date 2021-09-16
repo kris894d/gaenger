@@ -61,7 +61,11 @@ function filtrerOmroder() {
   this.classList.add("valgt");
   header.textContent = this.textContent;
 
-  splash.querySelector("img").src = "img/" + filtrer + "_splash.jpg";
+  if (filtrer == "alle") {
+    splash.querySelector("img").src = "./img/sjælland_splash.jpg";
+  } else {
+    splash.querySelector("img").src = "img/" + filtrer + "_splash.jpg";
+  }
 }
 
 // hentData fanger vores ruter og lister(arrays)i json fra restd//
@@ -84,7 +88,9 @@ function vis(json) {
   json.forEach((omroder) => {
     if (filtrer == omroder.område || filtrer == "alle") {
       let klon = galleriTemplate.cloneNode(true).content;
+
       klon.querySelector("img").src = "img/" + omroder.billed + ".jpg";
+
       klon.querySelector("h2").textContent = omroder.navn;
       klon.querySelector(".kortbeskrivelse").textContent =
         omroder.kortbeskrivelse;

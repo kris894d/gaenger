@@ -7,7 +7,7 @@
 
 /*MENUBAR - MOBILE*/
 /*Burgermenu*/
-.burgerButton {
+/* .burgerButton {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
@@ -62,10 +62,10 @@
 
 .streg3.aktiv {
   transform: translateY(0) rotate(45deg);
-}
+} */
 
 /*NavBar*/
-.navbar {
+/* .navbar {
   z-index: 10;
   width: 100vw;
   height: 100vh;
@@ -108,10 +108,10 @@ nav .navbarLinks.aktiv {
 .navbar .navbarLinks li a {
   text-decoration: none;
   color: white;
-}
+} */
 
 /*Header*/
-header {
+/* header {
   display: none;
   transition-delay: 2s;
   display: flex;
@@ -166,7 +166,7 @@ header nav {
 
 li {
   list-style: none;
-}
+} */
 /*MENUBAR - MOBILE - SLUT*/
 
 #section_kontakt {
@@ -186,39 +186,8 @@ li {
   width: 34vw;
 }
 
-/**Footer - starter**/
-footer {
-  background-color: #5c6f49;
-  color: white;
-  display: flex;
-  padding: 23px;
-  font-size: 0.6rem;
-  gap: 10px;
-  font-family: montserrat, sans-serif;
-}
-
-footer img {
-  width: 33vw;
-}
-footer .social img {
-  width: 4vw;
-  text-align: end;
-}
-
-footer p {
-  font-size: 10px;
-}
-
-footer #footer {
-  gap: 45px;
-}
-
-footer .p1 {
-  margin-right: -13px;
-}
-
 @media (min-width: 768px) {
-  .burgerButton {
+  /* .burgerButton {
     display: none;
   }
 
@@ -304,7 +273,7 @@ footer .p1 {
 
   li {
     list-style: none;
-  }
+  } */
 
   /*MENUBAR - TABLET - SLUT*/
 
@@ -331,11 +300,6 @@ footer .p1 {
     grid-column: 3/4;
     grid-row: 2/5;
   }
-
-  .social {
-    padding-top: 20px;
-  }
-
   p {
     font-size: 1.1rem;
     line-height: 1.5;

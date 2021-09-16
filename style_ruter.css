@@ -1,12 +1,6 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 /*MENUBAR - MOBILE*/
 /*Burgermenu*/
-.burgerButton {
+/* .burgerButton {
   position: absolute;
   top: 0.75rem;
   right: 1rem;
@@ -61,10 +55,10 @@
 
 .streg3.aktiv {
   transform: translateY(0) rotate(45deg);
-}
+} */
 
 /*NavBar*/
-.navbar {
+/* .navbar {
   z-index: 10;
   width: 100vw;
   height: 100vh;
@@ -107,10 +101,10 @@ nav .navbarLinks.aktiv {
 .navbar .navbarLinks li a {
   text-decoration: none;
   color: white;
-}
+} */
 
 /*Header*/
-header {
+/* header {
   display: none;
   transition-delay: 2s;
   display: flex;
@@ -164,14 +158,14 @@ header nav {
 
 li {
   list-style: none;
-}
+} */
 /*MENUBAR - MOBILE - SLUT*/
 
 #galleri h2 {
   color: black;
 }
 
-img {
+.splashbillede img {
   width: 100%;
   height: auto;
   display: block;
@@ -198,7 +192,7 @@ section .splashbillede {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   max-width: 1500px;
-  width: 90vw;
+  width: auto;
   margin: 0 auto;
 }
 
@@ -206,7 +200,7 @@ article {
   /* border: 2px solid rgb(0, 0, 0); */
   margin: 10px;
   margin-top: 50px;
-  padding: 10px;
+  padding: 20px;
 }
 
 #nav_filtrer {
@@ -422,43 +416,12 @@ p {
   color: green;
 }
 
-p {
+/* p {
   text-align: center;
-}
-
-/**Footer - starter**/
-footer {
-  background-color: #5c6f49;
-  color: white;
-  display: flex;
-  padding: 25px;
-  font-size: 0.6rem;
-  gap: 10px;
-  font-family: montserrat, sans-serif;
-}
-
-footer img {
-  width: 33vw;
-}
-footer .social img {
-  width: 4vw;
-  text-align: end;
-}
-
-footer p {
-  font-size: 10px;
-}
-
-footer #footer {
-  gap: 45px;
-}
-
-footer .p1 {
-  margin-left: 0px;
-}
+} */
 
 @media (min-width: 768px) {
-  .burgerButton {
+  /* .burgerButton {
     display: none;
   }
 
@@ -545,7 +508,7 @@ footer .p1 {
 
   li {
     list-style: none;
-  }
+  } */
 
   /*MENUBAR - TABLET - SLUT*/
 }
@@ -617,35 +580,6 @@ footer .p1 {
     margin-left: 121px;
     cursor: pointer;
   }
-  /**Footer - starter**/
-  footer {
-    background-color: #5c6f49;
-    color: white;
-    display: flex;
-    padding: 25px;
-    font-size: 0.6rem;
-    gap: 10px;
-  }
-
-  footer img {
-    width: 12vw;
-  }
-  footer .social img {
-    width: 4vw;
-    text-align: end;
-  }
-
-  footer p {
-    font-size: 14px;
-  }
-
-  footer #footer {
-    gap: 45px;
-  }
-
-  footer .p1 {
-    margin-left: 845px;
-  }
 
   .center {
     position: absolute;
@@ -653,5 +587,13 @@ footer .p1 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 10rem;
+  }
+
+  #liste {
+    width: 90vw;
+  }
+
+  article {
+    padding: 10px;
   }
 }
